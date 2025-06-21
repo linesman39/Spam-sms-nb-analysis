@@ -1,0 +1,20 @@
+CONCLUSION
+1.1	SUMMARY OF FINDINGS:
+The findings from our comparison of Bernoulli Naive Bayes (BNB) and Multinomial Naive Bayes (MNB) can be categorized into two:
+1.	Choosing the Right Model:
+•	BNB is cautious—it rarely misclassifies legitimate messages as spam (no false positives). But it sometimes misses actual spam (27 false negatives).
+•	MNB is thorough—it catches more spam (better recall), but it might make a few false positive errors.
+2.	Accuracy vs. Coverage:
+•	Both models are neck-and-neck in accuracy (around 98%). 
+•	But considering priorities: 
+	In order to avoid annoying false positives (legit messages marked as spam), BNB should be preferred.
+	If catching all spam matters most, then MNB should be used
+
+5.2	IMPLICATIONS OF STUDY
+The results obtained from this comparison show that with sufficient data for the machine learning model, Accuracy difference between MNB and BNB is of little significance. A more salient factor is the ability of MNB to accurately identify actual spam messages while BNB missed some spam messages, but BNB has the added advantage of ensuring that all messages flagged as spam are actually spams. If our priority is both precision and recall equally (e.g., in medical diagnosis), MNB might be a better choice due to its balanced performance. While if avoiding false positives is critical (e.g., spam detection), BNB should be considered because the BNB classifier demonstrates excellent precision, ensuring that positive predictions are highly reliable. However, the recall is slightly lower, suggesting that some actual positive instances might be missed. Overall, the BNB classifier performs well, but further analysis is needed to understand the trade-offs between precision and recall.
+
+
+5.3	RECOMMENDATIONS
+These new results inspire further research question. Firstly, what specific features contribute to the improved accuracy of the models and how can the models be fine-tuned to balance precision and recall even better
+
+
